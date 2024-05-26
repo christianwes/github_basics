@@ -10,17 +10,6 @@ void print_product(Product p) {
     printf("Product: %s, Price: %.2f, Quantity: %d\n", p.name, p.price, p.quantity);
 }
 
-int main() {
-    Product p1 = {"Apple", 0.5, 30};
-    Product p2 = {"(B)anana", 0.2, 50};
-
-    print_product(p1);
-    print_product(p2);
-
-    return 0;
-}
-
-
 // Función que calcula el valor total del inventario para un producto aplicando descuentos por cantidad.
 float calculate_inventory_value(Product p) {
     float discount = 0.0;
@@ -38,4 +27,17 @@ float calculate_inventory_value(Product p) {
     
     return total_value;
 }
+
+int main() {
+    Product p1 = {"Apple", 0.5, 30};
+    Product p2 = {"(B)anana", 0.2, 50};
+
+    print_product(p1);
+    print_product(p2);
+
+    return 0;
+}
+
+
+
 
